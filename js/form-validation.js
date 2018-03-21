@@ -9,9 +9,9 @@ $(function() {
       // of an input field. Validation rules are defined
       // on the right side
 
-      contact-name: "required",
-      contact-message: "required",
-      contact-email: {
+      contactname: "required",
+      contactmessage: "required",
+      contactemail: {
         required: true,
         // Specify that email should be validated
         // by the built-in "email" rule
@@ -25,8 +25,8 @@ $(function() {
     // Specify validation error messages
     messages: {
 
-      contact-name: "Please enter your name",
-      email: "Please enter a valid email address"
+      contactname: "Please enter your name",
+      contactemail: "Please enter a valid email address"
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
