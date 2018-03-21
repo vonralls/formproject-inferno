@@ -1,4 +1,5 @@
 <%
+'set up form variables
 Dim contactName
 Dim contactPhone
 Dim contactEmail
@@ -14,8 +15,16 @@ contactReason = Request.form("contactReason")
 contactState = Request.form("contactState")
 contactCity = Request.form("contactCity")
 
+'log variables to file
+dim fs,f
+set fs=Server.CreateObject("Scripting.FileSystemObject")
+set f=fs.CreateTextFile("c:\Inetpub\contactlog.txt",true)
+f.WriteLine("contactName, contactPhone, contactEmail, contactReason,contactCity, contactState, contactMessage")
+f.close
+set f=nothing
+set fs=nothing
 
-
+'send email
 
 
 %>
