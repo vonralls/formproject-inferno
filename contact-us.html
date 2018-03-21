@@ -6,36 +6,37 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Contact Form</title>
    <meta name="description" content="This is a contact form">
+   <link rel="stylesheet" href="css/style.css"/>
  </head>
 <body>
   <form action="submit-form.asp" method="post" name="contact-form" class="contactform">
-    Name<br>
-    <input type="text" name="contact-name"><br>
-    Email<br>
-    <input type="text" name="contact-email"><br>
-    Phone Number<br>
-    <input type="text" name="contact-phone"><br>
-    Reason for Contact:<br>
+    <label for="contact-name">Name</label>
+    <input type="text" name="contact-name">
+    <label for="contact-email">Email</label>
+    <input type="text" name="contact-email">
+    <label for="contact-phone">Phone Number</lable>
+    <input type="text" name="contact-phone">
+    <label for="contact-reason">Reason for Contact:</label>
     <select name="contact-reason">
       <option value="reason-one">Reason 1</option>
       <option value="reason-two">Reason 2</option>
       <option value="reason-three">Reason 3</option>
     </select>
-    <br>
-    City:<br>
-    <input type="text" name="contact-city"><br>
-    State:<br>
+
+    <label for="contact-city">City:</label>
+    <input type="text" name="contact-city">
+    <label for="contact-state">State:</label>
     <select name="contact-state">
       <option value="TN">TN</option>
       <option value="MS">MS</option>
       <option value="AR">AR</option>
-    </select><br>
-    Message:<br>
-    <input type="textarea" name="contact-message"><br>
+    </select>
+    <label for="contact-message">Message:</label>
+    <input type="textarea" name="contact-message">
     <button type="submit">SUBMIT</button>
-
-
-
   </form>
+  <script src="https://cdn.jsdelivr.net/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+  <script src="js/form-validation.js"></script>
 </body>
 </html>
