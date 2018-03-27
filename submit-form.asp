@@ -26,11 +26,11 @@ set fs=nothing
 
 Set myMail = CreateObject("CDO.Message")
 myMail.Subject = "Sending email with CDO"
-myMail.From = "vonralls@gmail.com"
+myMail.From = "admin@WIN-297LFKPOP5C"
 myMail.To = "von@creativeinferno.com"
 'myMail.Bcc = "someoneelse@somedomain.com"
 'myMail.Cc = "someoneelse2@somedomain.com"
-myMail.TextBody = "This is a message."
+myMail.TextBody = "This is a final message."
 myMail.Send
 set myMail = nothing
 %>
