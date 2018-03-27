@@ -6,6 +6,7 @@ Dim contactMessage
 Dim contactReason
 Dim contactState
 Dim contactCity
+Dim emailBody
 contactName = Request.form("contactName")
 contactPhone = Request.form("contactPhone")
 contactEmail = Request.form("contactEmail")
@@ -23,14 +24,15 @@ f.WriteLine(contactName & "," & contactPhone & "," & contactEmail & "," & contac
 f.close
 set f=nothing
 set fs=nothing
-
+emailBody = contactName & "<br>" & contactPhone & "<br>" & contactEmail & "<br>" & contactReason & "<br>" & contactCity & "<br>" & contactState & "<br>" & contactMessage
 Set myMail = CreateObject("CDO.Message")
 myMail.Subject = "Sending email with CDO"
 myMail.From = "admin@WIN-297LFKPOP5C"
 myMail.To = "von@creativeinferno.com"
+'myMail.BodyFormat = 0
 'myMail.Bcc = "someoneelse@somedomain.com"
 'myMail.Cc = "someoneelse2@somedomain.com"
-myMail.TextBody = "This is a final message."
+myMail.HTMLBody = emailBody
 myMail.Send
 set myMail = nothing
 %>
