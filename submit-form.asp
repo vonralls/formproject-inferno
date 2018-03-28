@@ -15,7 +15,7 @@ contactReason = Request.form("contactReason")
 contactState = Request.form("contactState")
 contactCity = Request.form("contactCity")
 contactDataCheck = Request.form("contactDataCheck")
-if contactDataCheck = 5678
+if contactDataCheck = 5678 Then
         response.write(contactName & "<br>" & contactPhone)
         dim fs
         dim f
