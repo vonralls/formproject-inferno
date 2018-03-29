@@ -33,7 +33,7 @@ form button {
   width: 100%;
 }
 form input {
-  height: 25px;
+  height: 50px;
   line-height: 25px;
   background: #fff;
   color: #000;
@@ -47,9 +47,9 @@ form input {
   height: 100px !important;
 }
 form button {
-  height: 30px;
+  height: 50px;
   line-height: 30px;
-  background: #e67e22;
+  background: #d79610;
   color: #fff;
   margin-top: 10px;
   cursor: pointer;
