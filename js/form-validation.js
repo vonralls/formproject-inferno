@@ -17,6 +17,13 @@ $(function() {
         // by the built-in "email" rule
         email: true
       },
+      contactphone: {
+        required: true,
+        // Specify that email should be validated
+        // by the built-in "email" rule
+        phoneUS: true
+      },
+
       password: {
         required: true,
         minlength: 5
@@ -26,7 +33,11 @@ $(function() {
     messages: {
 
       contactname: "Please enter your name",
-      contactemail: "Please enter a valid email address"
+      contactemail: "Please enter a valid email address",
+      contactphone: "Please enter a valid phone number"
+
+
+
     },
     // Make sure the form is submitted to the destination defined
     // in the "action" attribute of the form when valid
