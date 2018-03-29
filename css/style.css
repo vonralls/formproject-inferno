@@ -43,6 +43,9 @@ form input {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+.message {
+  height: 100px !important;
+}
 form button {
   height: 30px;
   line-height: 30px;
