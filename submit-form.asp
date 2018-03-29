@@ -26,7 +26,7 @@ if contactDataCheck = 5678 Then
         f.close
         set f=nothing
         set fs=nothing
-        emailBody = contactName & "<br>" & contactPhone & "<br>" & contactEmail & "<br>" & contactReason & "<br>" & contactCity & "<br>" & contactState & "<br>" & contactMessage
+        emailBody = "<b>Name: </b>" & contactName & "<br>" & "<b>Phone Number: </b>" & contactPhone & "<br>" & "<b>Email: </b>" & contactEmail & "<br>" & "<b>Reason: </b>" & contactReason & "<br>" & "<b>City: </b>" & contactCity & "<br>" & "<b>State: </b>" & contactState & "<br>" & "<b>Message: </b><br>" & contactMessage
         Set myMail = CreateObject("CDO.Message")
         myMail.Subject = "Message from StaffLine website"
         myMail.From = "admin@WIN-297LFKPOP5C"
