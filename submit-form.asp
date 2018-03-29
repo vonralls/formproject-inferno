@@ -37,5 +37,7 @@ if contactDataCheck = 5678 Then
         myMail.HTMLBody = emailBody
         myMail.Send
         set myMail = nothing
+Else
+  Response.Redirect http://www.staffline.com
  End If
 %>
