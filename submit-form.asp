@@ -38,6 +38,6 @@ if contactDataCheck = 5678 Then
         myMail.Send
         set myMail = nothing
 Else
-  Response.Redirect http://www.staffline.com
+  Response.Redirect "http://www.staffline.com"
  End If
 %>
