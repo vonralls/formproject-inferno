@@ -35,7 +35,7 @@ $(function() {
 
       contactname: "Please enter your name",
       contactemail: "Please enter a valid email address",
-      contactphone: "Please enter a valid phone number",
+      contactphone: "Please enter a valid 10 digit phone number",
       contactreason: "Please select a reason"
 
 
