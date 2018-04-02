@@ -11,6 +11,7 @@ $(function() {
 
       contactname: "required",
       contactmessage: "required",
+      contactreason: "required",
       contactemail: {
         required: true,
         // Specify that email should be validated
