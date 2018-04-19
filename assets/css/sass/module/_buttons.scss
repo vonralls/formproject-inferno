@@ -1,0 +1,58 @@
+.btn {
+	color: $main-color;
+	background: $pop-color;
+	display:inline-block;
+	border-radius: 10px;
+	font-weight: 700;
+	text-decoration:none;
+	transition: all .3s;
+	font-size: 10px;
+	padding: 15px 20px;
+
+	@extend %headings;
+	@include respond-to('small'){
+		font-size: 16px;
+		padding: 20px 20px;
+	}
+	@include respond-to('large'){
+		font-size: 24px;
+		padding: 25px 20px;
+
+	}
+	&:hover {
+		background:$secondary-color;
+		color:white;
+		text-decoration: none;
+	}
+	&.active {
+		background:$pop-color;
+		color: white;
+	}
+
+}
+
+.cta {
+	@extend %headings;
+	font-weight:700;
+	font-size: 10px;
+	margin-left: 15px;
+	@include respond-to('small'){
+		font-size: 16px;
+		margin-left: 20px;
+	}
+	@include respond-to('large'){
+		font-size: 24px;
+		margin-left: 25px;
+
+	}
+}
+
+.content .btn {
+		@include respond-to('large'){
+
+			min-width: 300px;
+		}
+	text-align:center;
+		margin-top:10px;
+
+}

@@ -1,0 +1,30 @@
+form {
+  margin: 0 auto;
+  width: 85%;
+}
+input {
+  border-radius: 5px;
+border: 1px solid #cccccc;
+height: 33px;
+width: 75%;
+margin-bottom: 30px;
+}
+select {
+border-radius: 5px;
+border: 1px solid #cccccc;
+height: 33px;
+width: 75%;
+}
+label {
+  color: #184c9c;
+  font-weight: bold;
+  font-family: $heading-family;
+}
+input.message {
+  width: 92%;
+    height: 100px;
+}
+.error {
+  color: red !important;
+  margin-top: 0;
+}

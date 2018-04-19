@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staffline - Our Guarantee</title>
+<link rel="stylesheet" href="https://use.typekit.net/lih3ujx.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body class="subpage">
+    <header class="">
+        <div class="container">
+       <a href="../index.html" class="logo"></a>
+        <nav class="main-nav">
+            <div class="top-buttons">
+                <a href="../why-work-for-us/" class="btn">For Job Seekers</a>
+                <a href="https://www.staffline.net/ess/index.cfm" class="btn">Employee Self-Serve</a>
+            </div>
+            <ul class="nav">
+                <li class="close"><a onclick="closeMenu()">X</a>
+                <li><a href="../about-us/">About Us</a></li>
+                <li class="active"><a href="#">Our Guarantee</a></li>
+                <li><a href="../contact/">Contact Us</a></li>
+                <li class="not-desktop"><a href="../why-work-for-us/" class="btn">For Job Seekers</a>
+                <a href="https://www.staffline.net/ess/index.cfm" class="btn">Employee Self-Serve</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section class="content">
+        <div class="header our-guarantee">
+            <div class="container">
+                <h1 class="white">Our Guarantee</h1>
+            </div>
+        </div>
+        <section class="copy container">
+            <div class="copy-with-image">
+                    <div class="image">
+                        <img style="margin-top: -140px;" src="../assets/images/our-guarantee-icon.png">
+                    </div>
+                    <div class="copy">
+                        <h3>Staffline is the only temporary staffing company to guarantee the employment eligibility compliance of every employee we deploy. </h3>
+                        <p> If we fail to do our job, we’ll double your money back and pay any fines up to $25,000 per worker.* We make this guarantee with total confidence because our thorough training, due diligence, and proprietary technology and systems ensure compliance.
+                         </p>
+                         <h3>What our guarantee means for you and your company</h3>
+                        <p>
+                        With our 100% due diligence model, you’ll enjoy peace of mind beyond knowing that you’ve chosen a staffing company that understands and is responsive to your needs. Our considerable compliance efforts and guarantee greatly mitigate your company's potential risks stemming from governmental raids, negative media, costly fines and operational interruptions. You won’t find another staffing provider with the willingness or ability to make this guarantee. Why look anywhere else?
+                         </p>
+
+                        <p style="font-size: 10px;">
+                        *If any Staffline employee providing services to your business is determined to be ineligible for employment due to any failure by Staffline to execute a legally required verification, Staffline will refund double the fees and wages paid to Staffline for the employee, plus any fines incurred resulting from government audits related to the non-compliant employee, up to a total of $25,000 per employee</p>
+                    </div>
+                </div>
+        </section>
+    </section>
+<footer>
+    <div class="container">
+        <section class="copy">
+            <div class="logo"></div>
+            <p class="copywrite">&copy; 2018 Staff Line, Inc. All Rights Reserved.</p>
+            <p class="copywrite"><a href="#">Privacy Policy</a></p>
+        </section>
+        <section>
+            <p><strong>Memphis, TN</strong>
+                <br><span class="big-only">2838 Hickory Hill Road, Suite 5
+                <br>Memphis Tennessee 38115
+                <br>Phone: 901-273-8555</span></p>
+        </section>
+        <section>
+            <p><strong>Redford, MI</strong>
+                <br><span class="big-only">27302 Plymouth Road
+                <br>Redford MI 48239
+                <br>Phone: 313-817-0800</span></p>
+        </section>
+        <section class="last">
+            <p><strong>Nashville, TN</strong>
+                <br><span class="big-only">Nashville TN
+                <br>Phone:</span></p>
+        </section>
+    </div>
+</footer>
+
+
+
+
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../assets/js/vendor/menu.js"></script>
+<script>
+
+function closeMenu(){
+    $('.mobilemenu').removeClass('js-mobilemenu--opened');
+
+    $(document.documentElement).css({'overflow-y': '', 'height': ''});
+    $(document.body).css({'overflow-y': '', 'height': ''});
+
+
+  };
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 5) {
+        $("header").addClass("small");
+    } else {
+        $("header").removeClass("small");
+    }
+});
+</script>
+</body>
+</html>

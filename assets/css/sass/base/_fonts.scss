@@ -1,0 +1,106 @@
+a {
+  color: $main-color;
+  transition: all .2s;
+  @include text-hover($pop-color,underline);
+    &.active{
+      color: $font-color;
+    }
+}
+* {
+  @extend %fonts;
+}
+
+
+ol {
+  @extend %fonts;
+}
+
+p {
+  @extend %fonts;
+  color: #707070;
+  font-size: 11px;
+    line-height: 15px;
+        @include respond-to('small-portrait'){
+          font-size: 14px;
+          line-height: 20px;
+        }
+        @include respond-to('medium'){
+          font-size: 16px;
+          line-height: 24px;
+        } 
+        @include respond-to('large'){
+
+          font-size: 18px;
+          line-height: 28px;
+        }
+}
+
+ul {
+  @extend p;
+}
+
+h1 {
+  @extend %headings;
+  font-size: 19px;
+  @include respond-to('small-portrait') {
+    font-size: 30px;
+  }
+  @include respond-to('medium') {
+    font-size: 40px;
+  }
+  @include respond-to('large') {
+        font-size: 58px;
+    }
+  font-weight: 800;
+  margin:0;
+}
+
+h2 {
+  @extend %headings;
+  font-size: 19px;
+  @include respond-to('small-portrait') {
+    font-size: 30px;
+  }
+  @include respond-to('medium') {
+    font-size: 40px;
+  }
+  @include respond-to('large') {
+        font-size: 60px;
+    }
+  color: $main-color;
+  font-weight: 800;
+  margin:0;
+}
+
+h3 {
+  @extend %headings;
+  font-size: 19px;
+  @include respond-to('small-portrait') {
+    font-size: 21px;
+  }
+  @include respond-to('medium') {
+    font-size: 24px;
+  }
+  @include respond-to('large') {
+        font-size: 28px;
+    }
+  font-weight: 800;
+  color: $main-color;
+}
+
+h4 {
+  @extend %headings;
+}
+
+h5 {
+  @extend %headings;
+}
+
+h6 {
+  @extend %headings;
+}
+
+blockquote {
+  @extend %fonts;
+}
+

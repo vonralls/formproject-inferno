@@ -1,0 +1,248 @@
+.one {
+	
+	background: $main-color url(../images/manwithnocheck.png) 70% top no-repeat;
+	background-size:cover;
+	padding-top: 50px;
+	@include respond-to('medium'){
+				padding-top: 70px;
+					margin-bottom: 100px;
+					background: $main-color url(../images/manwithnocheck.png) right top no-repeat;
+		background-size:cover;
+			}
+	@include respond-to('large'){
+				padding-top: 120px;
+				margin-bottom: 200px;
+				
+
+			}
+	@include respond-to('large'){
+				padding-top: 190px;
+			}
+			@include respond-to('extra-large'){
+
+		background: url(../images/manwithcheck.png) right top no-repeat;
+		background-size:cover;
+	}
+	.skinny {
+
+		width: 75%;
+		@include respond-to('small'){
+			padding-left: 20px;
+					width: 55%;
+				}
+		@include respond-to('small-portrait'){
+					width: 50%;
+				}
+				@include respond-to('medium'){
+					width: 45%;
+				}
+
+		@include respond-to('large'){
+			width: 45%;
+		}
+	}
+
+	p {
+		font-size: 12px;
+		line-height: 16px;
+				@include respond-to('small-portrait'){
+					font-size: 16px;
+					line-height: 24px;
+				}
+				@include respond-to('medium'){
+					font-size: 20px;
+					line-height: 28px;
+				}	
+				@include respond-to('large'){
+					font-size: 24px;
+					line-height: 30px;
+
+				}
+
+		font-weight: 100;
+	}
+	article {
+		position: relative;
+		top:30px;
+		padding: 40px 20px;
+		margin: 0 20px;
+		margin-top: 0px;
+		@include respond-to('small'){
+			top:50px;
+			padding: 60px 60px;
+
+			margin-top: 30px;
+
+		}
+		@include respond-to('medium'){
+			top:50px;
+			padding: 70px 120px;
+			margin: 0 40px;
+
+			margin-top: 30px;
+
+		}
+		@include respond-to('large'){
+			top:100px;
+			padding: 90px 250px;
+			margin:auto;
+
+			margin-top: 10px;
+
+		}
+		@include respond-to('extra-large'){
+			top:140px;
+			padding: 90px 250px;
+			margin-top: 50px;
+
+		}
+		border-radius: 10px;
+		background:white;
+		max-width: 1380px;
+		color:#707070;
+		-webkit-box-shadow: 0px 10px 42px -9px rgba(173,173,173,1);
+		-moz-box-shadow: 0px 10px 42px -9px rgba(173,173,173,1);
+		box-shadow: 0px 10px 42px -9px rgba(173,173,173,1);
+	
+		p {
+			
+			font-weight: 500;
+			@include respond-to('medium'){
+				padding: 0 40px;
+			}
+
+		}
+		h2 {
+			@include respond-to('medium'){
+				padding: 0 40px;
+			}
+		}
+	}
+}
+
+.graphic {
+	background: url(../images/graphic-background.png) center center no-repeat;
+	background-size:cover;
+		padding: 50px 0px;
+
+		@include respond-to('small-portrait'){
+					margin-bottom: 50px;
+						padding: 50px 40px;
+
+			}
+	@include respond-to('medium'){
+			margin-bottom: 130px;
+				padding: 80px;
+
+
+			}
+	@include respond-to('large'){
+			padding: 130px;
+
+			}
+	.container {
+		max-width: 740px;
+	}
+	p {
+		color:white;
+	}
+	.check-graphic {
+		background:white;
+		border-radius:10px;
+		position:relative;
+		color: $main-color;
+		font-weight: 800;
+		text-align:center;
+		font-size: 14px;
+		line-height: 20px;
+		padding-right: 110px;
+		padding:20px 80px 20px 20px;
+		margin: 35px 0;
+		@include respond-to('small'){
+			font-size: 16px;
+			line-height: 20px;
+			padding-right: 110px;
+			padding:20px 80px 20px 20px;
+			margin: 35px 0;
+		}
+		@include respond-to('small-portrait'){
+				font-size: 20px;
+				line-height: 28px;
+				padding-right: 110px;
+				padding:30px 120px 30px 40px;
+				margin: 35px 0;
+
+			}
+		@include respond-to('medium'){
+				font-size: 24px;
+				line-height: 30px;
+				padding-right: 110px;
+				padding:40px 120px 40px 40px;
+				margin: 35px 0;
+
+
+			}
+		@include respond-to('large'){
+				font-size: 27px;
+				line-height: 36px;
+								padding:50px;
+
+				padding-right: 110px;
+				margin: 35px 0;
+
+			}
+		img {
+			position:absolute;
+			right: -20px;
+			top: 10px;
+				width: 100px;
+			
+			@include respond-to('small-portrait'){
+				right: -30px;
+
+				top: 10px;
+				width: 150px;	
+			}
+		@include respond-to('medium'){
+				top: 20px;
+
+
+			}
+		@include respond-to('large'){
+				top: 30px;
+
+			}
+
+		}
+	}
+}
+
+.center {
+	text-align:center;
+}
+
+hr {
+	border:none;
+	background:$pop-color;
+	height: 2px;
+	width: 150px;
+		margin-top: 20px;
+			margin-bottom: 20px;
+
+
+	@include respond-to('small'){
+				margin-top: 40px;
+		margin-bottom: 30px;
+
+
+		}
+		@include respond-to('medium'){
+				margin-top: 60px;
+
+
+		}
+		@include respond-to('large'){
+				margin-top: 90px;
+
+		}
+}

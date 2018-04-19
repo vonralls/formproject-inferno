@@ -1,0 +1,20 @@
+$font-family:museo-slab, serif;
+$heading-family: proxima-nova, sans-serif;
+
+$font-size: 16px; 
+$max-width: 1200px;
+$main-color: #133c7b;  
+$secondary-color: #559fd4;
+$pop-color: #e5b136;
+$font-color:#000;  
+ 
+$breakpoints: ( 
+  'small-only' : (max-width :48em),
+  'small': (min-width:35.5em),
+  'small-portrait': (min-width:48em),
+  'portrait-max': (max-width:48em),
+  'medium-max': (max-width:64em),
+  'medium': (min-width:64em),
+  'large': (min-width:90em),
+  'extra-large': (min-width:110em),
+); 

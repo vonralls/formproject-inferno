@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staffline - About Us</title>
+<link rel="stylesheet" href="https://use.typekit.net/lih3ujx.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body class="subpage">
+    <header class="">
+        <div class="container">
+       <a href="../index.html" class="logo"></a>
+        <nav class="main-nav">
+            <div class="top-buttons">
+                <a href="../why-work-for-us/" class="btn">For Job Seekers</a>
+                <a href="https://www.staffline.net/ess/index.cfm" class="btn">Employee Self-Serve</a>
+            </div>
+            <ul class="nav">
+                <li class="close"><a onclick="closeMenu()">X</a>
+                <li class="active"><a href="index.html">About Us</a></li>
+                <li><a href="../our-guarantee/">Our Guarantee</a></li>
+                <li><a href="../">Contact Us</a></li>
+                <li class="not-desktop"><a href="../why-work-for-us/" class="btn">For Job Seekers</a>
+                <a href="https://www.staffline.net/ess/index.cfm" class="btn">Employee Self-Serve</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section class="content">
+        <div class="header aboutus">
+            <div class="container">
+                <h1 class="white">Reputation. Reliability. Guaranteed.</h1>
+            </div>
+        </div>
+        <section class="copy container">
+            <div class="copy-with-image">
+                    <div class="image">
+                        <img src="../assets/images/about-us-icon.jpg">
+                    </div>
+                    <div class="copy">
+                        <h3>We founded Staffline in 2004 in response to staffing companies that deploy improperly vetted workers.</h3>
+                        <p> These business practices put the reputations of employers at risk.
+                         </p><p>
+                        Our 100% due-diligence model provides employers with a zero-risk partner for outside staffing. Our proprietary software, systems, and know-how ensure that we have proper employment eligibility documentation for every worker we deploy. We are the only temporary staffing company with an employment eligibility compliance guarantee — up to $25,000 per worker.
+                         </p><p>
+                        Protecting your reputation isn’t the only reason to choose Staffline. We’re able to fill our clients’ staffing requests — fast — because workers want to work for us. We treat them with respect and pay them on their own terms. That’s why our established fill rate exceeds industry standards.</p>
+                    </div>
+                </div>
+        </section>
+    </section>
+<footer>
+    <div class="container">
+        <section class="copy">
+            <div class="logo"></div>
+            <p class="copywrite">&copy; 2018 Staff Line, Inc. All Rights Reserved.</p>
+            <p class="copywrite"><a href="#">Privacy Policy</a></p>
+        </section>
+        <section>
+            <p><strong>Memphis, TN</strong>
+                <br><span class="big-only">2838 Hickory Hill Road, Suite 5
+                <br>Memphis Tennessee 38115
+                <br>Phone: 901-273-8555</span></p>
+        </section>
+        <section>
+            <p><strong>Redford, MI</strong>
+                <br><span class="big-only">27302 Plymouth Road
+                <br>Redford MI 48239
+                <br>Phone: 313-817-0800</span></p>
+        </section>
+        <section class="last">
+            <p><strong>Nashville, TN</strong>
+                <br><span class="big-only">Nashville TN
+                <br>Phone:</span></p>
+        </section>
+    </div>
+</footer>
+
+
+
+
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="../assets/js/vendor/menu.js"></script>
+<script>
+
+function closeMenu(){
+    $('.mobilemenu').removeClass('js-mobilemenu--opened');
+
+    $(document.documentElement).css({'overflow-y': '', 'height': ''});
+    $(document.body).css({'overflow-y': '', 'height': ''});
+
+
+  };
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 5) {
+        $("header").addClass("small");
+    } else {
+        $("header").removeClass("small");
+    }
+});
+</script>
+</body>
+</html>

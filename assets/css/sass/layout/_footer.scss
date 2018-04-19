@@ -1,0 +1,91 @@
+footer {
+	background: $main-color;
+	color:white;
+	width: 100%;
+	padding: 55px 0;
+	p {
+		color:white;
+	}
+	section {
+		@include respond-to('portrait-max'){
+		
+		display:inline-block;
+		border-right: 1px solid white;
+		padding-right: 5px;
+		margin-right: 5px;
+		&.copy {
+			display:block;
+			border:none;
+			margin-bottom: 10px;
+		}
+		&.last {
+			border:none;
+			padding-right: 0;
+			margin-right:0
+		}
+		p {
+			margin:0;
+			line-height: 1;
+		}
+	}
+	}
+	.container {
+		@include respond-to('medium'){
+			  display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+			  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+			  display: -ms-flexbox;      /* TWEENER - IE 10 */
+			  display: -webkit-flex;     /* NEW - Chrome */
+			  display: flex; 			
+			  -webkit-box-pack: space-between;
+			  -webkit-justify-content: space-between;
+			  -moz-box-pack: space-between;
+			  -ms-flex-pack: space-between;
+			  justify-content: space-between;
+		}
+		section {
+			img {
+				width: 330px;
+				display:block;
+			}
+		}
+	}
+	.logo {
+		@include respond-to('medium'){
+			background:url(../images/logo_no_tag_w.svg) -20px -20px no-repeat;
+			height: 55px;
+			background-size:cover;
+		}
+	}
+	.copywrite {
+		@extend %headings;
+		color:white;
+		margin:0;
+		a {
+			@extend %headings;
+			color:white;
+			text-decoration: none;
+			&:hover {
+				color:white;
+				text-decoration: underline;
+
+			}
+		}
+	}
+}
+
+		@include respond-to('small'){
+
+
+		}
+		@include respond-to('medium'){
+
+
+
+		}
+		@include respond-to('large'){
+			
+
+		}
+		@include respond-to('extra-large'){
+
+		}

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="27px" height="27px" viewBox="0 0 27 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Login Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="12.5" cy="12.5" r="12.5"></circle>
+    </defs>
+    <g id="Style" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Global-Navigation" transform="translate(-993.000000, -24.000000)">
+            <g id="Login-Icon" transform="translate(994.000000, 25.000000)">
+                <mask id="mask-2" fill="white">
+                    <use xlink:href="#path-1"></use>
+                </mask>
+                <use id="Mask" stroke="#FFFFFF" stroke-width="1.5" xlink:href="#path-1"></use>
+                <path d="M14.8502467,16.8256691 L14.8502467,15.1493946 C16.0785765,14.4638309 16.897463,13.1889265 16.897463,11.7101838 L16.897463,8.97993137 C16.897463,6.78266912 15.0148428,5 12.801802,5 C10.5903989,5 8.7085976,6.78266912 8.7085976,8.97993137 L8.7085976,11.7101838 C8.7085976,13.1889265 9.52748414,14.4638309 10.755814,15.1504118 L10.755814,16.8248554 L6.59157118,17.4227402 C5.14582699,17.4227402 4,18.786951 4,20.2235833 L4,25.655201 L21.6060606,25.655201 L21.6060606,20.2235833 C21.6060606,18.786951 20.4602336,17.4227402 19.0153083,17.4227402 L14.8502467,16.8256691 Z" id="Mask-Copy" stroke="#FFFFFF" stroke-width="1.5" mask="url(#mask-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

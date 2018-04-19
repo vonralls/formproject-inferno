@@ -1,0 +1,289 @@
+.container {
+	max-width: 1440px;
+	margin:auto;
+	padding: 0 30px;
+	width: 100%;
+}
+
+.header {
+							height: 150px;
+
+	
+		@include respond-to('small-portrait'){
+									height: 250px;
+
+				}
+				@include respond-to('medium'){
+						height: 350px;
+
+				}
+
+		@include respond-to('large'){
+									height: 450px;
+
+		}
+	width: 100%;
+		@extend %displayflex;
+		@extend %aligncenter;
+	
+	h1 {
+		width: 65%;
+				margin-left: 10px;
+
+		@include respond-to('small'){
+					width: 55%;
+							margin-left: 20px;
+
+				}
+		@include respond-to('small-portrait'){
+					width: 50%;
+				}
+				@include respond-to('medium'){
+					width: 45%;
+							margin-left: 40px;
+
+				}
+
+		@include respond-to('large'){
+		}
+	}
+	
+}
+.content {
+	padding-top: 90px;
+	@include respond-to('medium'){
+		padding-top: 160px;
+	}
+}
+.subpage {
+	.copy {
+				padding: 20px  5px;
+
+		@include respond-to('small'){
+							padding: 20px ;
+
+				}
+		@include respond-to('small-portrait'){
+				}
+				@include respond-to('medium'){
+					padding: 40px ;
+
+						}
+	}
+	.copy-with-image {
+		@extend %aligncenter;
+		.image {
+			align-self:center;
+			display:none;
+						@include respond-to('medium'){
+							display:block;
+						}
+		}
+		.copy {
+					text-align:left;
+					p {
+						padding:0;
+					}
+			@include respond-to('medium'){
+
+				max-width: 60%;
+			}
+		}
+	}
+}
+.copy-with-image {
+	width: 100%;
+	padding: 0 20px;
+			@include respond-to('portrait-max'){
+
+	img {max-width: 100%}
+}
+	@include respond-to('small'){
+
+		}
+		@include respond-to('medium'){
+			padding: 0;
+			display: -webkit-box;      /* OLD - iOS 6-, Safari 3.1-6 */
+				  display: -moz-box;         /* OLD - Firefox 19- (buggy but mostly works) */
+				  display: -ms-flexbox;      /* TWEENER - IE 10 */
+				  display: -webkit-flex;     /* NEW - Chrome */
+				  display: flex;  
+
+				-webkit-box-align: center;
+				  -ms-flex-align: center;
+				  -webkit-align-items: center;
+				  -moz-box-align: center;
+				  align-items: center;
+
+
+		}
+		@include respond-to('large'){
+			
+
+		}
+		@include respond-to('extra-large'){
+
+		}
+		
+	
+	h3 {
+		margin-top:0;
+	}
+	.copy {
+					text-align: center;
+					@include respond-to('medium'){
+						text-align:left;
+					}
+
+		p {padding:0 0;
+					
+		}
+
+	}
+	.image {
+		@include respond-to('medium'){
+			align-self: flex-end;
+			padding-right: 40px;
+		}
+		text-align: center;
+		
+		
+	}
+	&.extra-padding{
+			padding: 50px 0;
+
+			@include respond-to('small') {
+							padding: 80px 0 50px;
+
+			}
+		@include respond-to('medium'){
+			padding: 0;
+			padding-right: 100px;
+
+
+
+		}
+		@include respond-to('large'){
+			padding-right: 170px;
+
+		}
+		@include respond-to('extra-large'){
+
+		}
+		.image {
+			width: 90%;
+
+			margin:0 auto 20px;
+			
+			img {
+				width: 100%;
+			}
+
+		@include respond-to('small'){
+						max-width: 50%;
+
+
+		}
+		@include respond-to('medium'){
+			margin:0;
+			flex-grow: 1;
+			min-width: 60%;
+
+
+		}
+		@include respond-to('large'){
+			
+
+		}
+		@include respond-to('extra-large'){
+
+		}
+		}
+	}
+}
+
+
+.faq {
+	.copy.container {
+		max-width: 1200px;
+		padding: 40px;
+		h3 {
+			max-width: 100%;
+			&.intro {
+				padding-bottom: 30px;
+			}
+		}
+	}
+
+	.q-and-a {
+
+		@extend %displayflex;
+		margin-bottom: 50px;
+
+
+		.question {
+			min-width: 200px;
+			max-width: 200px;
+			@include respond-to('medium'){
+
+				min-width: 300px;
+				max-width: 300px;
+			}
+			p {
+				@extend h3;
+				-webkit-margin-before: 20px;
+			}
+		}
+		.answer {
+				padding-left: 50px;
+			}
+		
+		@include respond-to('portrait-max'){
+			display:block;
+			margin: 25px 0;
+
+
+			.question {
+				cursor:pointer;
+				width: 100%;
+				max-width: 100%;
+				border-bottom: 2px solid $pop-color;
+				position:relative;
+				padding-right: 50px;
+				&:after {
+					content:"+";
+					position: absolute;
+					right:0;
+					top:0;
+					color: $pop-color;
+					font-weight: bold;
+					font-size: 28px;
+
+				}
+				&.open:after {
+					content:"-";
+				}
+			}
+
+			.answer {
+				visibility: hidden;
+				height: 0;
+				padding: 20px 50px 20px 0;
+
+				&.open {
+					visibility: visible;
+					height:auto;
+				}
+			}
+		}
+				@include respond-to('small-only'){
+								margin: 5px 0;
+
+					.answer {
+						padding: 20px 0;
+					}
+				}
+
+	}
+	
+}

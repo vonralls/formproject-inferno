@@ -1,0 +1,65 @@
+.header {
+	&.faq {
+		background:url(../images/faq-banner.jpg) center top no-repeat;
+		background-size:cover;
+		@include respond-to('large'){
+			background:url(../images/faq-banner.jpg) right top no-repeat;
+			background-size:cover;
+		}
+
+	}
+	&.aboutus {
+		background:url(../images/aboutus-banner.jpg) center top no-repeat;
+		background-size:cover;
+		@include respond-to('large'){
+			background:url(../images/aboutus-banner.jpg) right top no-repeat;
+			background-size:cover;
+		}
+
+ 	}
+	&.why-work-for-us {
+		background:url(../images/why-work-for-us-banner.png) center top no-repeat;
+		background-size:cover;
+		@include respond-to('large'){
+			background:url(../images/why-work-for-us-banner.png) right top no-repeat;
+			background-size:cover;
+		}
+
+	}
+	&.how-it-works {
+		background:url(../images/how-it-works-banner.png) center top no-repeat;
+		background-size:cover;
+		@include respond-to('large'){
+			background:url(../images/how-it-works-banner.png) right top no-repeat;
+			background-size:cover;
+		}
+
+	}
+	&.our-guarantee {
+		background:url(../images/our-guarantee-banner.png) center top no-repeat;
+		background-size:cover;
+		@include respond-to('large'){
+			background:url(../images/our-guarantee-banner.png) right top no-repeat;
+			background-size:cover;
+		}
+
+	}
+	&.contact {
+		background:url(../images/contact-banner.png) center top no-repeat;
+		background-size:cover;
+		@include respond-to('large'){
+			background:url(../images/contact-banner.png) right top no-repeat;
+			background-size:cover;
+		}
+	}
+ }
+ .header-text {
+	 color: white;
+	 width: 25%;
+	 margin-left: 40px;
+ }
+ @media (max-width: 64em) {
+	 .header-text{
+		 margin-left:20px !important;
+ 	}
+ }

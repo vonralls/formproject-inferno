@@ -1,0 +1,207 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Staffline - Contact</title>
+<link rel="stylesheet" href="https://use.typekit.net/lih3ujx.css">
+	<link rel="stylesheet" href="../assets/css/style.css">
+
+</head>
+
+<body class="subpage">
+    <header class="">
+        <div class="container">
+       <a href="../index.html" class="logo"></a>
+        <nav class="main-nav">
+            <div class="top-buttons">
+                <a href="../why-work-for-us/" class="btn">For Job Seekers</a>
+                <a href="https://www.staffline.net/ess/index.cfm" class="btn">Employee Self-Serve</a>
+            </div>
+            <ul class="nav">
+                <li class="close"><a onclick="closeMenu()">X</a>
+                <li><a href="../about-us/">About Us</a></li>
+                <li><a href="../our-guarantee/">Our Guarantee</a></li>
+                <li class="active"><a href="#">Contact Us</a></li>
+                <li class="not-desktop"><a href="../why-work-for-us/" class="btn">For Job Seekers</a>
+                <a href="https://www.staffline.net/ess/index.cfm" class="btn">Employee Self-Serve</a></li>
+            </ul>
+        </nav>
+    </div>
+    </header>
+    <section class="content">
+        <div class="header contact">
+            <div class="container">
+                <h1 class="white">Let's talk</h1>
+                <p class="header-text">Please provide your information below. If you have an urgent staffing need, call our staffing hotline XXX.XXX.XXXX.</p>
+            </div>
+        </div>
+        <section class="copy container">
+            <form action="../submit-form.asp" method="post" name="contact-form" class="contactform">
+          <div class="pure-g">
+            <div class="pure-u-1 pure-u-lg-1-3">
+
+
+                      <label for="contactname">Name</label><br>
+                      <input type="text" name="contactname">
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-3">
+                  <label for="contactemail">Email</label><br>
+                  <input type="text" name="contactemail">
+            </div>
+            <div class="pure-u-1 pure-u-lg-1-3">
+
+                  <label for="contactphone">Phone Number</label><br>
+                  <input type="text" name="contactphone">
+            </div>
+          </div>
+          <div class="pure-g">
+              <div class="pure-u-1 pure-u-lg-1-3">
+                        <label for="contactreason">Reason for Contact</label><br>
+                        <select name="contactreason" required>
+                          <option>--Select a Reason--</option>
+                          <option value="Interested in your services">Interested in your services</option>
+                          <option value="Seeking employment in Tennessee">Seeking employment in Tennessee</option>
+                          <option value="Seeking employment in Michigan">Seeking employment in Michigan</option>
+                            <option value="Payroll, HR, or other administrative question">Payroll, HR, or other administrative question</option>
+                        </select>
+              </div>
+              <div class="pure-u-1 pure-u-lg-1-3">
+                        <label for="contactcity">City</label><br>
+                        <input type="text" name="contactcity">
+              </div>
+              <div class="pure-u-1 pure-u-lg-1-3">
+                        <label for="contactstate">State</label><br>
+                        <select name="contactstate">
+                            <option>--Select a State--</option>
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                            <option value="AZ">Arizona</option>
+                            <option value="AR">Arkansas</option>
+                            <option value="CA">California</option>
+                            <option value="CO">Colorado</option>
+                            <option value="CT">Connecticut</option>
+                            <option value="DE">Delaware</option>
+                            <option value="DC">District Of Columbia</option>
+                            <option value="FL">Florida</option>
+                            <option value="GA">Georgia</option>
+                            <option value="HI">Hawaii</option>
+                            <option value="ID">Idaho</option>
+                            <option value="IL">Illinois</option>
+                            <option value="IN">Indiana</option>
+                            <option value="IA">Iowa</option>
+                            <option value="KS">Kansas</option>
+                            <option value="KY">Kentucky</option>
+                            <option value="LA">Louisiana</option>
+                            <option value="ME">Maine</option>
+                            <option value="MD">Maryland</option>
+                            <option value="MA">Massachusetts</option>
+                            <option value="MI">Michigan</option>
+                            <option value="MN">Minnesota</option>
+                            <option value="MS">Mississippi</option>
+                            <option value="MO">Missouri</option>
+                            <option value="MT">Montana</option>
+                            <option value="NE">Nebraska</option>
+                            <option value="NV">Nevada</option>
+                            <option value="NH">New Hampshire</option>
+                            <option value="NJ">New Jersey</option>
+                            <option value="NM">New Mexico</option>
+                            <option value="NY">New York</option>
+                            <option value="NC">North Carolina</option>
+                            <option value="ND">North Dakota</option>
+                            <option value="OH">Ohio</option>
+                            <option value="OK">Oklahoma</option>
+                            <option value="OR">Oregon</option>
+                            <option value="PA">Pennsylvania</option>
+                            <option value="RI">Rhode Island</option>
+                            <option value="SC">South Carolina</option>
+                            <option value="SD">South Dakota</option>
+                            <option value="TN">Tennessee</option>
+                            <option value="TX">Texas</option>
+                            <option value="UT">Utah</option>
+                            <option value="VT">Vermont</option>
+                            <option value="VA">Virginia</option>
+                            <option value="WA">Washington</option>
+                            <option value="WV">West Virginia</option>
+                            <option value="WI">Wisconsin</option>
+                            <option value="WY">Wyoming</option>
+                        </select>
+                    </div>
+                  </div>
+                  <div class="pure-g">
+                      <div class="pure-u-1">
+                          <label for="contactmessage">Message</label><br>
+                          <input type="textarea" name="contactmessage" class="message">
+                          <input type="hidden" name="contactDataCheck" value="5678">
+                      </div>
+                  </div>
+                  <div class="pure-g">
+                      <div class="pure-u-1">
+
+                      <button type="submit" class="btn">SUBMIT</button>
+                    </form>
+                  </div>
+                </div>
+
+        </section>
+    </section>
+<footer>
+    <div class="container">
+        <section class="copy">
+            <div class="logo"></div>
+            <p class="copywrite">&copy; 2018 Staff Line, Inc. All Rights Reserved.</p>
+            <p class="copywrite"><a href="#">Privacy Policy</a></p>
+        </section>
+        <section>
+            <p><strong>Memphis, TN</strong>
+                <br><span class="big-only">2838 Hickory Hill Road, Suite 5
+                <br>Memphis Tennessee 38115
+                <br>Phone: 901-273-8555</span></p>
+        </section>
+        <section>
+            <p><strong>Redford, MI</strong>
+                <br><span class="big-only">27302 Plymouth Road
+                <br>Redford MI 48239
+                <br>Phone: 313-817-0800</span></p>
+        </section>
+        <section class="last">
+            <p><strong>Nashville, TN</strong>
+                <br><span class="big-only">Nashville TN
+                <br>Phone:</span></p>
+        </section>
+    </div>
+</footer>
+
+
+
+
+
+<script src="//code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.15.1/jquery.validate.min.js"></script>
+<script src="../assets/js/vendor/menu.js"></script>
+<script src="../assets/js/vendor/form-validation.js"></script>
+<script src="../assets/js/vendor/additional-methods.js"></script>
+<script>
+
+function closeMenu(){
+    $('.mobilemenu').removeClass('js-mobilemenu--opened');
+
+    $(document.documentElement).css({'overflow-y': '', 'height': ''});
+    $(document.body).css({'overflow-y': '', 'height': ''});
+
+
+  };
+
+$(window).scroll(function() {
+    var scroll = $(window).scrollTop();
+
+    if (scroll >= 5) {
+        $("header").addClass("small");
+    } else {
+        $("header").removeClass("small");
+    }
+});
+</script>
+</body>
+</html>

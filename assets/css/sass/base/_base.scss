@@ -1,0 +1,66 @@
+@import 'variables';
+@import 'mixins';
+@import 'extends';  
+@import 'fonts';   
+
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body, html {    
+  overflow-x:hidden;
+} 
+
+.cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+img {
+} 
+
+.mobile {
+  @include respond-to('small-portrait') {
+      display:none;
+    }
+}
+
+.not-desktop, .close {
+  @include respond-to('medium') {
+      display:none;
+    }
+}
+
+.big-only {
+  display:none;
+  @include respond-to('medium') {
+      display:block;
+    }
+
+}
+
+.desktop {
+    display:none; 
+    @include respond-to('small-portrait') {
+      display:inline-block;
+    }
+}
+    @include respond-to('medium-max') {
+
+.content {
+  p, h3 {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+}

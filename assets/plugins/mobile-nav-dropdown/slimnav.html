@@ -1,0 +1,49 @@
+<ul class="slimmenu">
+    <li>
+        <a href="#">Slim Menu 1</a>
+        <ul>
+            <li>
+                <a href="#">Slim Menu 1.1</a>
+                <ul>
+                    <li><a href="#">Slim Menu 1.1.1</a></li>
+                    <li>
+                        <a href="#">Slim Menu 1.1.2</a>
+                        <ul>
+                            <li><a href="#">Slim Menu 1.1.2.1</a></li>
+                            <li><a href="#">Slim Menu 1.1.2.2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="#">Slim Menu 1.2</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Slim Menu 2</a></li>
+    <li>
+        <a href="#">Slim Menu 3</a>
+        <ul>
+            <li>
+                <a href="#">Slim Menu 3.1</a>
+                <ul>
+                    <li><a href="#">Slim Menu 3.1.1</a></li>
+                    <li><a href="#">Slim Menu 3.1.2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Slim Menu 3.2</a></li>
+        </ul>
+    </li>
+    <li><a href="#">Slim Menu 4</a></li>
+</ul>
+
+<script>
+$('.slimmenu').slimmenu(
+{
+    resizeWidth: '800',
+    collapserTitle: 'Main Menu',
+    animSpeed:'medium',
+    indentChildren: true,
+    childrenIndenter: '&raquo;'
+});
+</script>
+</body>
+</html>

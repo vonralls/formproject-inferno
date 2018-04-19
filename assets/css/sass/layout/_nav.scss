@@ -1,0 +1,141 @@
+header {
+	position:fixed;
+	top:0;
+	background:white;
+	width:100%;
+	left:0;
+	right:0;
+		@include respond-to('medium'){
+
+			padding: 40px 10px 20px;
+		}
+	z-index: 99;
+
+	.container {
+		@extend %displayflex;
+			@extend %aligncenter;
+
+	}
+	margin:auto;
+	* {
+		transition: all .3s;
+	}
+
+	.logo {
+		display:block;
+		width: 400px;
+				    @include respond-to('large'){
+
+		width: 500px;
+	}
+		height: 90px;
+		background: url(../images/logo_no_tag.svg) center center no-repeat;
+		background-size: contain;
+
+				    @include respond-to('small'){
+		background-size: cover;
+
+				    }
+
+				    @include respond-to('medium'){
+						background: url(../images/logo_full.svg) center center no-repeat;
+								background-size: cover;
+
+
+					}
+	}
+}
+
+nav {
+
+	margin-left: auto;
+			    @include respond-to('medium'){
+
+	margin-top:auto;
+		}
+
+	.top-buttons {
+		display:none;
+		    @include respond-to('medium'){
+		    	display:block;
+		text-align: right;
+	}
+	}
+	a {
+		text-decoration: none;
+		font-family: $heading-family;
+
+		&.btn {
+			color:white;
+			background: $secondary-color;
+			border-radius: 6px;
+			display:inline-block;
+			padding: 10px 17px;
+			font-size: 16px;
+			margin-left: 25px;
+			margin-bottom: 10px;
+			&:hover {
+				text-decoration: none;
+				background: $pop-color;
+			}
+
+		}
+	}
+	ul {
+		display:none;
+		    @include respond-to('medium'){
+		    	display:inline-block;
+		li { 
+			display:inline-block;
+			margin-left: 15px;
+					    @include respond-to('large'){
+
+			margin-left: 55px;
+		}
+			a {
+				font-weight: 800;
+				text-transform: uppercase;
+				font-size: 22px;
+				&:hover {
+					text-decoration: underline;
+					color: $main-color;
+				}
+
+			}
+			&.active {
+				a {
+					color: $pop-color;
+					text-decoration: underline;
+				}
+			}
+		}
+
+		
+	}
+}
+	
+}
+
+.small {
+			@include respond-to('medium'){
+
+	padding: 20px 0;
+}
+
+		.logo {
+			height: 55px;
+			background: url(../images/logo_no_tag.svg) center center no-repeat;
+			background-size: cover;
+		}
+	nav {
+		.top-buttons {
+			display:none;
+		}
+	}
+}
+
+.close {
+	position:absolute;
+	top: 20px;
+	right: 0;
+}
